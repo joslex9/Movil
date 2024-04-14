@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'MyHomePage.dart';
+
+import 'Widgets/Login.dart'; // Importar el archivo login.dart
+
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // A widget which will be started on application startup
-      home: const MyHomePage(title: ''),
+      home: LoginPage(), // Aquí estableces LoginPage como la pantalla inicial
     );
   }
 }
