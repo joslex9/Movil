@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'HomePage.dart'; // Importar HomePage.dart
 import 'RegisterPage.dart';
 
 class LoginPage extends StatelessWidget {
@@ -50,7 +51,16 @@ class LoginPage extends StatelessWidget {
                 SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: () {
-                    // Lógica para "SIGN IN"
+                    // Verificar si los campos de usuario y contraseña están completos
+                    // Si están completos, navegar al HomePage
+                    final isUserLoggedIn =
+                        true; // Aquí debes realizar la lógica de autenticación
+                    if (isUserLoggedIn) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    }
                   },
                   child: Text('SIGN IN'),
                 ),
