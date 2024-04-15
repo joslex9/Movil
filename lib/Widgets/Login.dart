@@ -1,6 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'RegisterPage.dart'; // Importa la página de registro
+import 'RegisterPage.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -44,7 +44,6 @@ class LoginPage extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     // Lógica para "Forgot password?"
-                    // Por ejemplo, mostrar un diálogo o navegar a una página para restablecer la contraseña
                   },
                   child: Text('Forgot password?'),
                 ),
@@ -52,7 +51,6 @@ class LoginPage extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     // Lógica para "SIGN IN"
-                    // Por ejemplo, verificar las credenciales del usuario y navegar a la siguiente pantalla si son válidas
                   },
                   child: Text('SIGN IN'),
                 ),
@@ -61,7 +59,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             TextButton(
               onPressed: () {
-                // Navegar a la página de registro (RegisterPage)
+                // Navegar a la página de registro
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => RegisterPage()),

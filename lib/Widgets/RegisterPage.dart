@@ -11,14 +11,14 @@ class RegisterPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'May Day',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: const Column(
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
                 children: [
                   TextField(
                     decoration: InputDecoration(
@@ -52,7 +52,6 @@ class RegisterPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Lógica para registrar al usuario
-                // Por ejemplo, validar los campos y enviar la información al servidor
               },
               child: Text('SIGN UP'),
             ),
