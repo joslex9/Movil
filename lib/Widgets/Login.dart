@@ -1,4 +1,6 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
+import 'RegisterPage.dart'; // Importa la página de registro
 
 class LoginPage extends StatelessWidget {
   @override
@@ -59,8 +61,11 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             TextButton(
               onPressed: () {
-                // Lógica para "Create an account"
-                // Por ejemplo, navegar a la página de registro
+                // Navegar a la página de registro (RegisterPage)
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                );
               },
               child: Text('Create an account'),
             ),

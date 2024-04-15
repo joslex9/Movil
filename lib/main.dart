@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Widgets/Login.dart'; // Importar el archivo login.dart
+import 'Widgets/Login.dart';
 
 void main() => runApp(MyApp());
 
