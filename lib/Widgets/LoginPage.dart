@@ -32,7 +32,7 @@ class MensajesDestacadosScreen extends StatelessWidget {
             ),
             SizedBox(height: 20.0),
             Text(
-              'Mantén presionado un mensaje \n en cualquier chat para destacarlo, \n así podrás encontrarlo fácilmente \n más tarde.',
+              'Mantén presionado un mensaje en cualquier chat para destacarlo, así podrás encontrarlo fácilmente más tarde.',
               textAlign: TextAlign.center,
             ),
           ],
@@ -40,4 +40,10 @@ class MensajesDestacadosScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: MensajesDestacadosScreen(),
+  ));
 }
